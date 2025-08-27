@@ -6,7 +6,7 @@
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:00:32 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/07/10 17:28:39 by dmusulas         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:21:50 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ public:
     ~RobotomyRequestForm();
 
 protected:
-    // Implement the pure virtual function
     virtual void executeAction() const;
 };
 

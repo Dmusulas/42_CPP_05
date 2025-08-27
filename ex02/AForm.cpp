@@ -6,7 +6,7 @@
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 19:49:26 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/07/10 17:46:49 by dmusulas         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:18:17 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,15 @@
 AForm::AForm(const std::string &name, int const signGrade,
              int const executionGrade)
     : name(name), isSigned(false), signGrade(signGrade),
-      executionGrade(executionGrade) {}
+      executionGrade(executionGrade) {
+
+    if (signGrade < maxGrade || executionGrade < maxGrade) {
+        throw GradeTooHighException();
+    }
+    if (signGrade > minGrade || executionGrade > minGrade) {
+        throw GradeTooLowException();
+    }
+}
 
 // Copy constructor
 AForm::AForm(const AForm &other)

@@ -6,7 +6,7 @@
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 18:34:09 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/07/08 18:47:53 by dmusulas         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:04:55 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int main(void) {
     try {
         std::cout << bob;
         bob.demoteGrade();
+        bob.promoteGrade();
         bob.promoteGrade();
     } catch (std::exception &e) {
         std::cerr << e.what() << std::endl;

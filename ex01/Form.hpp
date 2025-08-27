@@ -6,7 +6,7 @@
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 18:51:19 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/07/08 20:10:13 by dmusulas         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:13:17 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ private:
     bool isSigned;
     int const signGrade;
     int const executionGrade;
+    // Const for grade validation
+    static const int maxGrade = 1;   // Highest grade
+    static const int minGrade = 150; // Lowest grade
     Form(); // we don't need default constructor in this case so it is made
             // private - declared not defined
 

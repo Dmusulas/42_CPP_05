@@ -6,7 +6,7 @@
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 18:13:10 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/07/08 20:14:19 by dmusulas         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:03:40 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ private:
     std::string const name;
     int grade;
 
-    // Const for grade validation
     static const int maxGrade = 1;   // Highest grade
     static const int minGrade = 150; // Lowest grade
     // Default constructor

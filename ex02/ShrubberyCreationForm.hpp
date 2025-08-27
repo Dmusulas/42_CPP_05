@@ -6,7 +6,7 @@
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:00:32 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/07/10 16:19:36 by dmusulas         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:19:44 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ public:
     ~ShrubberyCreationForm();
 
 protected:
-    // Implement the pure virtual function
     virtual void executeAction() const;
 };
 
